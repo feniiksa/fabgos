@@ -1,0 +1,31 @@
+@import "../mixins";
+
+.headlines {
+  font-size: 19px;
+  font-family: Montserrat;
+  font-weight: 800;
+
+  @include mq(sm) {
+    font-size: 30px;
+  }
+
+  @include mq(md) {
+    font-size: 25px;
+  }
+
+  @include mq(lg) {
+    font-size: 35px;
+  }
+
+  @include mq(xl) {
+    font-size: 43px;
+  }
+
+  @include mq(xxl) {
+    font-size: 64px;
+  }
+
+  @include mq(k2) {
+    font-size: 85px;
+  }
+}
