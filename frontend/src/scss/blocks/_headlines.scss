@@ -2,7 +2,7 @@
 
 .headlines {
   font-size: 19px;
-  font-family: Montserrat;
+  font-family: $font-family-primary;
   font-weight: 800;
 
   @include mq(sm) {
