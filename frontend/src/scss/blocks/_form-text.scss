@@ -1,0 +1,46 @@
+@import "../mixins";
+
+.form-text {
+    color: black;
+    font-family: $font-family-primary;
+    font-size: 8px;
+    font-weight: 700;
+
+    @include mq(sm) {
+      font-size: 12px;
+    }
+
+    @include mq(md) {
+      font-size: 9px;
+    }
+
+    @include mq(lg) {
+      font-size: 11px;
+    }
+
+    @include mq(xl) {
+      font-size: 14px;
+    }
+
+    @include mq(xxl) {
+      font-size: 20px;
+    }
+
+    @include mq(k2) {
+      font-size: 27px;
+    }
+
+    &--desk{
+      color: #404040;
+      background: #D9D9D9;
+      border: none;
+      border-radius: 19px;
+      height: 20px;
+      width: 100%;
+      padding-left: 12px;
+    }
+
+    &--big{
+      height: 67px;
+    }
+}

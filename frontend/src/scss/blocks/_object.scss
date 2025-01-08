@@ -1,6 +1,7 @@
 @import "../mixins";
 
 .object {
+  // $block: &;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -10,32 +11,181 @@
   height: 106px;
   width: 100%;
   border-radius: 13px;
-  background-image: url(./src/img/ts.avif);
+  background-image: url(./src/img/new.png);
   background-repeat: no-repeat;
   background-size: cover;
 
   color: #ffffff;
+  box-shadow: 1px 3px 10px 2px #77C5FD;
 
-  &::before{
+  @include mq(sm) {
+    height: 158px;
+    border-radius: 19px;
+    padding: 13px;
+  }
+
+  @include mq(md) {
+    height: 240px;
+    border-radius: 29px;
+    padding: 20px;
+  }
+
+  @include mq(lg) {
+    height: 319px;
+    border-radius: 39px;
+    padding: 30px;
+  }
+
+  @include mq(xl) {
+    height: 398px;
+    border-radius: 49px;
+    padding: 35px;
+  }
+
+  @include mq(xxl) {
+    height: 597px;
+    border-radius: 73px;
+    padding: 55px;
+  }
+
+  @include mq(k2) {
+    height: 796px;
+    border-radius: 98px;
+    padding: 80px;
+  }
+
+  &::before {
     content: "";
     border-radius: 13px;
     z-index: 1;
     position: absolute;
     top: 0;
-    left: 0; 
-    right: 0; 
+    left: 0;
+    right: 0;
     bottom: 0;
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 30%, rgba(32, 122, 224, 0.8 ));
-  }
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 30%, rgba(32, 122, 224, 0.8));
+
+    @include mq(sm) {
+      border-radius: 19px;
+    }
   
+    @include mq(md) {
+      border-radius: 29px;
+    }
+  
+    @include mq(lg) {
+      border-radius: 39px;
+    }
+  
+    @include mq(xl) {
+      border-radius: 49px;
+    }
+  
+    @include mq(xxl) {
+      border-radius: 73px;
+    }
+  
+    @include mq(k2) {
+      border-radius: 98px;
+    }
+  }
+
 
   &__h4 {
     font-size: 12px;
     z-index: 2;
+    margin-bottom: 6px;
+
+    @include mq(sm) {
+      font-size: 14px;
+      margin-bottom: 8px;
+    }
+
+    @include mq(md) {
+      font-size: 21px;
+      margin-bottom: 12px;
+    }
+
+    @include mq(lg) {
+      font-size: 29px;
+      margin-bottom: 17px;
+    }
+
+    @include mq(xl) {
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+
+    @include mq(xxl) {
+      font-size: 53px;
+      margin-bottom: 30px;
+    }
+
+    @include mq(k2) {
+      font-size: 71px;
+      margin-bottom: 40px;
+    }
   }
 
   &__description {
     font-size: 5px;
     z-index: 2;
+
+    @include mq(sm) {
+      font-size: 6px;
+    }
+
+    @include mq(md) {
+      font-size: 8px;
+    }
+
+    @include mq(lg) {
+      font-size: 11px;
+    }
+
+    @include mq(xl) {
+      font-size: 13px;
+    }
+
+    @include mq(xxl) {
+      font-size: 20px;
+    }
+
+    @include mq(k2) {
+      font-size: 27px;
+    }
   }
+
+  // &--big{
+
+  //   width: 250px;
+  //   height: 200px;
+  //   margin-left: 30px;
+  //   border-radius: 20px;
+  //   padding: 20px;
+
+  //   &__h4 {
+  //     font-size: 20px;
+  //     z-index: 2;
+  //   }
+
+  //   &__description {
+  //     font-size: 15px;
+  //     z-index: 2;
+  //   }
+
+  //   &::before{
+  //     content: "";
+  //     border-radius: 20px;
+  //     z-index: 1;
+  //     position: absolute;
+  //     top: 0;
+  //     left: 0; 
+  //     right: 0; 
+  //     bottom: 0;
+  //     background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 30%, rgba(32, 122, 224, 0.8 ));
+  //   }
+
+
+  // }
 }
