@@ -55,19 +55,42 @@
   <br>
   <!-- форма -->
   <form class="form" action="#">
-    <label class="input-label">
+    <label class="form__inp">
       <h4 class="form-text">Имя</h4>
       <input class="form-text form-text--desk" type="text" placeholder="Введите имя">
     </label>
-    <label class="input-label">
+    <label class="form__inp">
       <h4 class="form-text">Эл. Почта</h4>
       <input class="form-text form-text--desk" type="email" placeholder="Введите электронную почту">
     </label>
-    <label class="input-label">
+    <label class="form__input">
       <h4 class="form-text">Текст обратной связи</h4>
       <input class="form-text form-text--desk form-text--big" type="email" placeholder="Введите текст">
     </label>
+    <div class="form__btn btn">Подать обращение</div>
   </form>
+  <br>
+  <form class="form" action="#">
+    <div class="form__cont">
+      <div class="form__form-text form-text">Имя</div>
+      <input class="form-text form-text--desk" type="text" placeholder="Введите имя">
+    </div>
+    <div class="form__cont">
+      <div class="form__form-text form-text">Эл. Почта</div>
+      <input class="form-text form-text--desk" type="email" placeholder="Введите электронную почту">
+    </div>
+    <div class="form__cont">
+      <div class="form__form-text form-text">Текст обратной связи</div>
+      <textarea class="form-text form-text--desk form-text--big" id="inputText" name="text" rows="5" ></textarea>
+      <label class="form-text form-text--holder" for="inputText">Введите текст</label>
+    </div>
+    <div class="form__btn btn">Подать обращение</div>
+  </form>
+ 
+  <br>
+  <br>
+
+ 
 </body>
 
 </html>

@@ -42,5 +42,14 @@
 
     &--big{
       height: 67px;
+      padding-left: 13px;
+      padding-top: 6px;
+    }
+
+    &--holder{
+      position: absolute;
+      left: 13px; 
+      top: 20px;
+      color: #404040;
     }
 }
