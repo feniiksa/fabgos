@@ -52,6 +52,18 @@
 
       background: #F0F8FF;
     }
+
+    @include mq(lg) {
+      border-radius: 25px;
+      height: 29px;
+      padding-left: 17px;
+    }
+
+    @include mq(xl) {
+      border-radius: 31px;
+      height: 36px;
+      padding-left: 22px;
+    }
   }
 
   &--big {
@@ -70,6 +82,16 @@
       padding-left: 13px;
       padding-top: 13px;
     }
+
+    @include mq(lg) {
+      height: 203px;
+      padding-left: 17px;
+    }
+
+    @include mq(xl) {
+      height: 254px;
+      padding-left: 22px;
+    }
   }
 
   &--holder {
@@ -86,6 +108,16 @@
     @include mq(md) {
       left: 13px;
       top: 28px;
+    }
+
+    @include mq(lg) {
+      top: 34px;
+      left: 17px;
+    }
+
+    @include mq(xl) {
+      top: 40px;
+      left: 22px;
     }
   }
 }

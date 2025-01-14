@@ -40,13 +40,28 @@
     box-shadow: 0px 2px 6px 2px #77C5FD;
   }
 
-  // @include mq(lg) {
-  //   font-size: 11px;
-  // }
+  @include mq(lg) {
+    padding-inline: 17px;
+    padding-top: 28px;
 
-  // @include mq(xl) {
-  //   font-size: 14px;
-  // }
+    gap: 13px;
+
+    height: 445px;
+    width: 390px;
+    border-radius: 25px;
+  }
+
+  @include mq(xl) {
+    padding-inline: 20px;
+    padding-top: 35px;
+
+    gap: 17px;
+
+    height: 555px;
+    width: 487px;
+    border-radius: 31px;
+    border: 3px solid #77C5FD;
+  }
 
   // @include mq(xxl) {
   //   font-size: 20px;
@@ -67,6 +82,14 @@
     @include mq(md) {
       margin-left: 14px;
     }
+
+    @include mq(lg) {
+      margin-bottom: 7px;
+    }
+
+    // @include mq(xxl) {
+
+    // }
   }
 
   &__btn {
