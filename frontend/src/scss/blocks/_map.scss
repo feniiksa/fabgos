@@ -1,0 +1,22 @@
+@import "../mixins";
+
+.map {
+  padding-inline: 30px;
+
+  &__headlines {
+    margin-bottom: 3px;
+  }
+
+  &__text {
+    margin-bottom: 11px;
+  }
+
+  &__wrap {
+    height: 106px;
+    width: 260px;
+    border: 1px solid #77C5FD;
+    box-shadow: 0px 2px 6px 1px #77C5FD;
+    border-radius: 13px;
+    margin: 0 auto;
+  }
+}

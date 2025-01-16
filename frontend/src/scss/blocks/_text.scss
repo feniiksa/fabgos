@@ -1,0 +1,32 @@
+@import "../mixins";
+
+.text {
+  font-family: $font-family-primary;
+  font-weight: 600;
+  font-size: 8px;
+  color: #000000;
+
+  @include mq(sm) {
+    font-size: 12px;
+  }
+
+  @include mq(md) {
+    font-size: 9px;
+  }
+
+  @include mq(lg) {
+    font-size: 11px;
+  }
+
+  @include mq(xl) {
+    font-size: 14px;
+  }
+
+  @include mq(xxl) {
+    font-size: 20px;
+  }
+
+  @include mq(k2) {
+    font-size: 27px;
+  }
+}

@@ -1,0 +1,47 @@
+@import "../mixins";
+
+.fitbeck {
+  padding-top: 5px;
+  padding-inline: 8px;
+  height: 130px;
+  width: 270px;
+
+  border: 2px solid #0095FF;
+  border-radius: 12px;
+
+  @include mq(sm) {
+    padding-top: 7px;
+    padding-inline: 11px;
+    height: 197px;
+    width: 406px;
+
+    border: 3px solid #0095FF;
+    border-radius: 18px;
+  }
+
+  @include mq(md) {
+    display: none;
+  }
+
+  &__headlines {
+    margin-bottom: 7px;
+
+    @include mq(sm) {
+      margin-bottom: 12px;
+    }
+  }
+
+  &__text {
+    margin-bottom: 15px;
+    margin-left: 4px;
+
+    @include mq(sm) {
+      margin-bottom: 20px;
+      margin-left: 7px;
+    }
+  }
+
+  &__btn {
+    margin: 0 auto;
+  }
+}
