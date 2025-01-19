@@ -3,20 +3,118 @@
 .map {
   padding-inline: 30px;
 
+  @include mq(sm) {
+    padding-inline: 45px;
+  }
+
+  @include mq(md) {
+    padding-inline: 84px;
+  }
+
+  @include mq(lg) {
+    padding-inline: 120px;
+  }
+
+  @include mq(xl) {
+    padding-inline: 148px;
+  }
+
+  @include mq(xxl) {
+    padding-inline: 220px;
+  }
+
+  @include mq(k2) {
+    padding-inline: 290px;
+  }
+
   &__headlines {
     margin-bottom: 3px;
+
+    @include mq(sm) {
+      margin-bottom: 6px;
+    }
+
+    @include mq(lg) {
+      margin-bottom: 8px;
+    }
+
+    @include mq(xl) {
+      margin-bottom: 11px;
+    }
+
+    @include mq(xxl) {
+      margin-bottom: 17px;
+    }
+
+    @include mq(k2) {
+      margin-bottom: 20px;
+    }
   }
 
   &__text {
     margin-bottom: 11px;
+
+    @include mq(sm) {
+      margin-bottom: 20px;
+    }
+
+    @include mq(md) {
+      margin-bottom: 48px;
+    }
+
+    @include mq(lg) {
+      margin-bottom: 23px;
+    }
+
+    @include mq(xl) {
+      margin-bottom: 29px;
+    }
+
+    @include mq(xxl) {
+      margin-bottom: 45px;
+    }
+
+    @include mq(k2) {
+      margin-bottom: 57px;
+    }
   }
 
   &__wrap {
     height: 106px;
-    width: 260px;
+    width: 100%;
     border: 1px solid #77C5FD;
     box-shadow: 0px 2px 6px 1px #77C5FD;
     border-radius: 13px;
     margin: 0 auto;
+
+    @include mq(sm) {
+      height: 160px;
+      border-radius: 20px;
+    }
+
+    @include mq(md) {
+      height: 250px;
+      border-radius: 29px;
+    }
+
+    @include mq(lg) {
+      height: 223px;
+      border-radius: 39px;
+    }
+
+    @include mq(xl) {
+      height: 404px;
+      border-radius: 49px;
+    }
+
+    @include mq(xl) {
+      height: 607px;
+      border-radius: 73px;
+    }
+
+    @include mq(k2) {
+      height: 809px;
+      border-radius: 73px;
+    }
   }
 }
