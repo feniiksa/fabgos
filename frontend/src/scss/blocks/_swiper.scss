@@ -11,7 +11,7 @@
 // }
 
 .swiper-slide {
-  overflow: hidden;
+  // overflow: hidden;
 }
 
 //   &__img img {
@@ -26,6 +26,8 @@
   font-size: 15px;
 }
 
+
+
 .swiper .swiper-pagination-bullet {
   height: 4px;
   width: 4px;
@@ -34,7 +36,7 @@
 }
 
 .swiper-pagination-bullets {
-  top: 85px !important;
+  top: 80px !important;
 }
 
 .swiper {
