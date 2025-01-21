@@ -1,24 +1,35 @@
 @import "../mixins";
 
 .swiper {
-  // padding-inline: 5px !important;
-  // margin: 0 auto;
-
+  width: 310px;
+  /* Ширина слайдера */
+  max-height: 77px;
+  /* Высота слайдера */
+  border-radius: 13px;
 }
-
-// .swiper .swiper-wrapper {
-//   height: 77px;
-// }
 
 .swiper-slide {
-  // overflow: hidden;
+  width: 310px;
+  /* Ширина каждого слайда */
+  max-height: 77px;
+  /* Высота каждого слайда */
 }
 
-//   &__img img {
-//     max-height: 77px;
-//     max-width: 310px;
-//   }
-// }
+.swiper-slide__img {
+  width: 100%;
+  /* Ширина изображения */
+  height: 100%;
+  /* Высота изображения */
+  overflow: hidden;
+  /* Скрыть переполнение */
+}
+
+.swiper-slide__img img {
+  width: 100%;
+  /* Масштабировать изображение по ширине */
+  height: auto;
+  /* Сохранить пропорции изображения */
+}
 
 .swiper .swiper-button-prev::after,
 .swiper .swiper-button-next::after {
@@ -26,51 +37,18 @@
   font-size: 15px;
 }
 
-
-
-.swiper .swiper-pagination-bullet {
-  height: 4px;
-  width: 4px;
-  margin: 2px !important;
-  // background: #648194;
-}
-
-.swiper-pagination-bullets {
-  top: 80px !important;
-}
-
-.swiper {
-
-  &__swiper-wrapper {
-    // height: 100px;
-  }
-
-  &__swiper-slide {}
-
-  &__swiper-pagination {}
-
-  &__swiper-button-prev {}
-
-  &__swiper-button-next {}
-
-  &__swiper-scrollbar {}
-}
-
-.swiper-wrapper {}
-
-.swiper-slide {
-  text-align: center;
-
-  &__img {
-    max-width: 100%;
-  }
-}
-
 .swiper-pagination {
+  margin-top: 20px;
+  /* Расстояние между слайдером и пагинацией */
 }
 
-.swiper-button-prev {}
-
-.swiper-button-next {}
-
-.swiper-scrollbar {}
+.swiper-pagination-bullet {
+  width: 4px;
+  /* Ширина точки пагинации */
+  height: 4px;
+  /* Высота точки пагинации */
+  margin: 0 1px;
+  /* Расстояние между точками (по 2 пикселя) */
+  background: #ffffff;
+  /* Цвет точки пагинации */
+}

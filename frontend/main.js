@@ -8,7 +8,8 @@ import 'swiper/css/pagination';
 // import { Autoplay } from 'swiper/modules';
 // import 'swiper/css/autoplay';
 const swiper = new Swiper('.swiper', {
-
+  slidesPerView: 1,
+  spaceBetween: 10,
   modules: [Navigation, Pagination],
   navigation: {
     nextEl: '.swiper-button-next',
