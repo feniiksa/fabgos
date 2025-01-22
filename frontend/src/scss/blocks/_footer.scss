@@ -1,13 +1,38 @@
 @import "../mixins";
 
 .footer {
-  width: 320px;
   height: 140px;
   background: #F0F8FF;
   padding-inline: 16px;
   padding-block: 9px;
 
   position: relative;
+
+  @include mq(sm) {
+    height: 210px;
+    padding-inline: 24px;
+    padding-block: 14px;
+  }
+
+  // @include mq(md) {
+  //   font-size: 40px;
+  // }
+
+  // @include mq(lg) {
+  //   font-size: 59px;
+  // }
+
+  // @include mq(xl) {
+  //   font-size: 75px;
+  // }
+
+  // @include mq(xxl) {
+  //   font-size: 111px;
+  // }
+
+  // @include mq(k2) {
+  //   font-size: 149px;
+  // }
 
   &__text {
     display: flex;
@@ -16,6 +41,11 @@
 
     font-weight: 400;
     font-size: 7px;
+
+    @include mq(sm) {
+      gap: 10px;
+      font-size: 10px;
+    }
   }
 
   // &__title {}
@@ -38,16 +68,26 @@
     gap: 3px;
     position: absolute;
     bottom: 10px;
+
+    @include mq(sm) {
+      gap: 4px;
+      bottom: 14px;
+    }
   }
 
   &__link {
     height: 21px;
     width: 21px;
+
+    @include mq(sm) {
+      height: 30px;
+      width: 30px;
+    }
   }
 
   &__img {
-    height: 21px;
-    width: 21px;
+    height: 100%;
+    width: 100%;
   }
 
   &__gerb {
@@ -57,5 +97,10 @@
     bottom: 10px;
     left: 50%;
     transform: translateX(-50%);
+
+    @include mq(sm) {
+      height: 75px;
+      bottom: 14px;
+    }
   }
 }
