@@ -1,0 +1,61 @@
+@import "../mixins";
+
+.footer {
+  width: 320px;
+  height: 140px;
+  background: #F0F8FF;
+  padding-inline: 16px;
+  padding-block: 9px;
+
+  position: relative;
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+
+    font-weight: 400;
+    font-size: 7px;
+  }
+
+  // &__title {}
+
+  &__tel {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+  }
+
+  &__mail {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+  }
+
+  &__social-net {
+    display: flex;
+    flex-direction: row;
+    gap: 3px;
+    position: absolute;
+    bottom: 10px;
+  }
+
+  &__link {
+    height: 21px;
+    width: 21px;
+  }
+
+  &__img {
+    height: 21px;
+    width: 21px;
+  }
+
+  &__gerb {
+    height: 50px;
+    width: auto;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}

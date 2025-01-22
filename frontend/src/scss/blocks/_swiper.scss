@@ -1,34 +1,29 @@
 @import "../mixins";
 
+
+
 .swiper {
   width: 310px;
-  /* Ширина слайдера */
-  max-height: 77px;
-  /* Высота слайдера */
+  height: 77px;
   border-radius: 13px;
+
+  position: relative;
 }
 
 .swiper-slide {
   width: 310px;
-  /* Ширина каждого слайда */
   max-height: 77px;
-  /* Высота каждого слайда */
 }
 
 .swiper-slide__img {
   width: 100%;
-  /* Ширина изображения */
   height: 100%;
-  /* Высота изображения */
   overflow: hidden;
-  /* Скрыть переполнение */
 }
 
 .swiper-slide__img img {
   width: 100%;
-  /* Масштабировать изображение по ширине */
   height: auto;
-  /* Сохранить пропорции изображения */
 }
 
 .swiper .swiper-button-prev::after,
@@ -37,18 +32,15 @@
   font-size: 15px;
 }
 
-.swiper-pagination {
-  margin-top: 20px;
-  /* Расстояние между слайдером и пагинацией */
+.swiper .swiper-pagination {
+  display: block !important;
+  position: absolute !important;
+  margin-top: 60px !important;
 }
 
 .swiper-pagination-bullet {
-  width: 4px;
-  /* Ширина точки пагинации */
-  height: 4px;
-  /* Высота точки пагинации */
-  margin: 0 1px;
-  /* Расстояние между точками (по 2 пикселя) */
-  background: #ffffff;
-  /* Цвет точки пагинации */
+  width: 4px !important;
+  height: 4px !important;
+  margin: 0 1px !important;
+  background: #d41d1d;
 }
