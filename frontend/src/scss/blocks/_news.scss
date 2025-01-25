@@ -1,0 +1,10 @@
+@import "../mixins";
+
+.news {
+  &__headlines {
+    text-align: center;
+    margin-bottom: 16px;
+  }
+
+  &__swiper-wr {}
+}

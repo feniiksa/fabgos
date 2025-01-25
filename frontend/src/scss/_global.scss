@@ -1,0 +1,29 @@
+html {
+  scroll-behavior: smooth;
+  height: 100%;
+}
+
+body {
+  background: $color-base;
+  padding-top: 60px;
+
+  // @include mq(md) {
+  //   padding-top: 62px;
+  // }
+
+  // @include mq(lg) {
+  //   padding-top: 82px;
+  // }
+
+  // @include mq(xl) {
+  //   padding-top: 67px;
+  // }
+
+  // @include mq(xxl) {
+  //   padding-top: 99px;
+  // }
+
+  // @include mq(k2) {
+  //   padding-top: 134px;
+  // }
+}

@@ -1,0 +1,15 @@
+@import "../mixins";
+
+.objects-wr {
+
+  &__headlines {
+    margin-bottom: 4px;
+    text-align: center;
+  }
+
+  &__text {
+    text-align: center
+  }
+
+  &__objects {}
+}

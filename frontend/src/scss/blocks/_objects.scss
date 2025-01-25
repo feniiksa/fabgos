@@ -1,0 +1,8 @@
+@import "../mixins";
+
+.objects {
+  display: grid;
+  flex-wrap: unset;
+  grid-template-columns: 1fr 1fr;
+  gap: 35px 10px;
+}
