@@ -7,7 +7,8 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 // import { Autoplay } from 'swiper/modules';
 // import 'swiper/css/autoplay';
-const swiper = new Swiper('.swiper', {
+const swiper = new Swiper('.my-swiper', {
+  loop: true,
   slidesPerView: 1,
   spaceBetween: 10,
   modules: [Navigation, Pagination],
@@ -34,4 +35,4 @@ const swiper = new Swiper('.swiper', {
   //     slidesOffsetAfter: 40,
   //   },
   // }
-});
+}); 
