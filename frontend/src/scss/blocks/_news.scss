@@ -1,6 +1,7 @@
-@import "../mixins";
+@use "../mixins";
 
 .news {
+  $block: &;
   &__headlines {
     text-align: center;
     margin-bottom: 16px;

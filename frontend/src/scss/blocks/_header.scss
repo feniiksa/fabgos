@@ -1,21 +1,24 @@
-@import "../mixins";
+@use "../mixins";
+@use "../variables";
+
 
 .header {
+  $block: &;
   z-index: 1000;
   width: 100%;
   height: 40px;
-  background: $color-base;
+  background: variables.$color-base;
   position: fixed;
   top: 0;
   box-shadow: 0px 0.5px 10px #d8d6d6;
   padding-inline: 17px;
 
 
-  @include mq(sm) {
+  @include mixins.mq(sm) {
     height: 60px;
   }
 
-  @include mq(md) {
+  @include mixins.mq(md) {
     padding-inline: 85px;
     height: 41px;
     display: flex;
@@ -24,25 +27,25 @@
     gap: 80px;
   }
 
-  @include mq(lg) {
+  @include mixins.mq(lg) {
     padding-inline: 114px;
     height: 55px;
     gap: 106px;
   }
 
-  @include mq(xl) {
+  @include mixins.mq(xl) {
     padding-inline: 142px;
     height: 68px;
     gap: 132px;
   }
 
-  @include mq(xxl) {
+  @include mixins.mq(xxl) {
     padding-inline: 213px;
     height: 103px;
     gap: 199px;
   }
 
-  @include mq(k2) {
+  @include mixins.mq(k2) {
     padding-inline: 285px;
     height: 137px;
     gap: 266px;
@@ -53,13 +56,13 @@
     height: 8px;
     margin-top: 10px;
 
-    @include mq(sm) {
+    @include mixins.mq(sm) {
       width: 17px;
       height: 11px;
       margin-top: 23px;
     }
 
-    @include mq(md) {
+    @include mixins.mq(md) {
       display: none;
     }
   }
@@ -70,14 +73,14 @@
   }
 
   &__logo-wap {
-    @include mq(md) {
+    @include mixins.mq(md) {
       display: flex;
       flex-direction: row;
       align-items: center;
       gap: 7px;
     }
 
-    @include mq(xxl) {
+    @include mixins.mq(xxl) {
       gap: 23px;
     }
   }
@@ -92,14 +95,14 @@
     left: 50%;
     transform: translate(-50%, -50%);
 
-    @include mq(md) {
+    @include mixins.mq(md) {
       position: relative;
       top: 0px;
       left: 0px;
       transform: none;
     }
 
-    @include mq(xxl) {
+    @include mixins.mq(xxl) {
       width: 57px;
       height: 57px;
       border-radius: 13px;
@@ -109,13 +112,13 @@
   &__logo-text {
     display: none;
 
-    @include mq(md) {
+    @include mixins.mq(md) {
       display: block;
       font-size: 13px;
       font-weight: 700;
     }
 
-    @include mq(xxl) {
+    @include mixins.mq(xxl) {
       font-size: 32px;
     }
   }

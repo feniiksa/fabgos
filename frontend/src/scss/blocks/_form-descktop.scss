@@ -1,0 +1,36 @@
+@use "../mixins";
+
+
+.form-descktop {
+  &__wap {
+    padding-inline: 200px;
+    text-align: center;
+    margin-bottom: 10px;
+
+    @include mixins.mq(lg) {
+      margin-bottom: 15px;
+      padding-inline: 250px;
+    }
+
+    @include mixins.mq(xl) {
+      margin-bottom: 19px;
+      padding-inline: 300px;
+    }
+
+    @include mixins.mq(xxl) {
+      margin-bottom: 28px;
+      padding-inline: 450px;
+    }
+
+    @include mixins.mq(k2) {
+      margin-bottom: 35px;
+      padding-inline: 650px;
+    }
+  }
+
+  // &__headlines {}
+
+  // &__text {}
+
+  // &__form-wap {}
+}

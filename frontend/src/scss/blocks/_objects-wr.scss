@@ -1,6 +1,7 @@
-@import "../mixins";
+@use "../mixins";
 
 .objects-wr {
+  $block: &;
 
   &__headlines {
     margin-bottom: 4px;
@@ -8,8 +9,18 @@
   }
 
   &__text {
-    text-align: center
+    text-align: center;
+    margin-bottom: 12px;
   }
 
-  &__objects {}
+  &__filters {
+    padding-right: 160px;
+    display: flex;
+    flex-direction: row;
+    align-self: flex-start;
+    gap: 8px;
+    margin-bottom: 11px;
+  }
+
+  // &__objects {}
 }

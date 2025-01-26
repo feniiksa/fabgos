@@ -1,7 +1,7 @@
-@import 'variables';
-@import 'mixins';
-@import 'fonts';
-@import 'reset';
-@import 'global';
+@use 'variables';
+@use 'mixins';
+@use 'fonts';
+@use 'reset';
+@use 'global';
 
-@import 'blocks/index';
+@use 'blocks/index';

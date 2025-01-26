@@ -1,0 +1,42 @@
+@use "../mixins";
+
+.form-wap {
+  @include mixins.mq(md) {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  // &__form {}
+
+  &__img img {
+    display: block;
+    bottom: 0;
+
+    @include mixins.mq(md) {
+      height: 333px;
+      width: 405px;
+    }
+
+    @include mixins.mq(lg) {
+      height: 436px;
+      width: 540px;
+    }
+
+    @include mixins.mq(xl) {
+      height: 546px;
+      width: 675px;
+    }
+
+    @include mixins.mq(xxl) {
+      height: 819px;
+      width: 1013px;
+    }
+
+    @include mixins.mq(k2) {
+      height: 1092px;
+      width: 1351px;
+    }
+  }
+}

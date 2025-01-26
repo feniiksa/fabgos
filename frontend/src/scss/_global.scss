@@ -1,10 +1,12 @@
+@use "variables";
+
 html {
   scroll-behavior: smooth;
   height: 100%;
 }
 
 body {
-  background: $color-base;
+  background: variables.$color-base;
   padding-top: 60px;
 
   // @include mq(md) {

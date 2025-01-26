@@ -1,10 +1,11 @@
-@import "../mixins";
+@use "../mixins";
 
 
 .nav {
+  $block: &;
   display: none;
 
-  @include mq(md) {
+  @include mixins.mq(md) {
     display: block;
   }
 
@@ -14,19 +15,19 @@
     align-items: center;
     gap: 22px;
 
-    @include mq(lg) {
+    @include mixins.mq(lg) {
       gap: 30px;
     }
 
-    @include mq(xl) {
+    @include mixins.mq(xl) {
       gap: 37px;
     }
 
-    @include mq(xxl) {
+    @include mixins.mq(xxl) {
       gap: 56px;
     }
 
-    @include mq(k2) {
+    @include mixins.mq(k2) {
       gap: 75px;
     }
 
@@ -42,19 +43,19 @@
     font-size: 9px;
     color: black;
 
-    @include mq(lg) {
+    @include mixins.mq(lg) {
       font-size: 11px;
     }
 
-    @include mq(xl) {
+    @include mixins.mq(xl) {
       font-size: 13px;
     }
 
-    @include mq(xxl) {
+    @include mixins.mq(xxl) {
       font-size: 20px;
     }
 
-    @include mq(k2) {
+    @include mixins.mq(k2) {
       font-size: 27px;
     }
   }

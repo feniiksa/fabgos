@@ -1,7 +1,7 @@
-@import "../mixins";
+@use "../mixins";
 
 .object {
-  // $block: &;
+  $block: &;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -18,37 +18,37 @@
   color: #ffffff;
   box-shadow: 1px 3px 10px 2px #77C5FD;
 
-  @include mq(sm) {
+  @include mixins.mq(sm) {
     height: 158px;
     border-radius: 19px;
     padding: 13px;
   }
 
-  @include mq(md) {
+  @include mixins.mq(md) {
     height: 240px;
     border-radius: 29px;
     padding: 20px;
   }
 
-  @include mq(lg) {
+  @include mixins.mq(lg) {
     height: 319px;
     border-radius: 39px;
     padding: 30px;
   }
 
-  @include mq(xl) {
+  @include mixins.mq(xl) {
     height: 398px;
     border-radius: 49px;
     padding: 35px;
   }
 
-  @include mq(xxl) {
+  @include mixins.mq(xxl) {
     height: 597px;
     border-radius: 73px;
     padding: 55px;
   }
 
-  @include mq(k2) {
+  @include mixins.mq(k2) {
     height: 796px;
     border-radius: 98px;
     padding: 80px;
@@ -65,27 +65,27 @@
     bottom: 0;
     background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 30%, rgba(32, 122, 224, 0.8));
 
-    @include mq(sm) {
+    @include mixins.mq(sm) {
       border-radius: 19px;
     }
   
-    @include mq(md) {
+    @include mixins.mq(md) {
       border-radius: 29px;
     }
   
-    @include mq(lg) {
+    @include mixins.mq(lg) {
       border-radius: 39px;
     }
   
-    @include mq(xl) {
+    @include mixins.mq(xl) {
       border-radius: 49px;
     }
   
-    @include mq(xxl) {
+    @include mixins.mq(xxl) {
       border-radius: 73px;
     }
   
-    @include mq(k2) {
+    @include mixins.mq(k2) {
       border-radius: 98px;
     }
   }
@@ -96,32 +96,32 @@
     z-index: 2;
     margin-bottom: 6px;
 
-    @include mq(sm) {
+    @include mixins.mq(sm) {
       font-size: 14px;
       margin-bottom: 8px;
     }
 
-    @include mq(md) {
+    @include mixins.mq(md) {
       font-size: 21px;
       margin-bottom: 12px;
     }
 
-    @include mq(lg) {
+    @include mixins.mq(lg) {
       font-size: 29px;
       margin-bottom: 17px;
     }
 
-    @include mq(xl) {
+    @include mixins.mq(xl) {
       font-size: 36px;
       margin-bottom: 20px;
     }
 
-    @include mq(xxl) {
+    @include mixins.mq(xxl) {
       font-size: 53px;
       margin-bottom: 30px;
     }
 
-    @include mq(k2) {
+    @include mixins.mq(k2) {
       font-size: 71px;
       margin-bottom: 40px;
     }
@@ -131,27 +131,27 @@
     font-size: 5px;
     z-index: 2;
 
-    @include mq(sm) {
+    @include mixins.mq(sm) {
       font-size: 6px;
     }
 
-    @include mq(md) {
+    @include mixins.mq(md) {
       font-size: 8px;
     }
 
-    @include mq(lg) {
+    @include mixins.mq(lg) {
       font-size: 11px;
     }
 
-    @include mq(xl) {
+    @include mixins.mq(xl) {
       font-size: 13px;
     }
 
-    @include mq(xxl) {
+    @include mixins.mq(xxl) {
       font-size: 20px;
     }
 
-    @include mq(k2) {
+    @include mixins.mq(k2) {
       font-size: 27px;
     }
   }

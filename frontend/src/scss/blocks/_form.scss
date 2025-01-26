@@ -1,6 +1,7 @@
-@import "../mixins";
+@use "../mixins";
 
 .form {
+  $block: &;
   padding-inline: 12px;
   padding-top: 12px;
 
@@ -9,81 +10,75 @@
   gap: 9px;
 
   height: 233px;
-  width: 279px;
+  width: 100%;
   border-radius: 18px;
   border: 1px solid #77C5FD;
   background-color: #ffffff;
   box-shadow: 0px 2px 6px 2px #77C5FD;
 
-  @include mq(sm) {
+  @include mixins.mq(sm) {
     padding-inline: 18px;
     padding-top: 30px;
 
     gap: 14px;
 
     height: 350px;
-    width: 418px;
     border-radius: 27px;
     box-shadow: 0px 2px 6px 4px #77C5FD;
   }
 
-  @include mq(md) {
+  @include mixins.mq(md) {
     padding-inline: 13px;
     padding-top: 16px;
 
     gap: 10px;
 
     height: 333px;
-    width: 292px;
     border-radius: 18px;
     border: 2px solid #77C5FD;
     box-shadow: 0px 2px 6px 2px #77C5FD;
   }
 
-  @include mq(lg) {
+  @include mixins.mq(lg) {
     padding-inline: 17px;
     padding-top: 28px;
 
     gap: 13px;
 
     height: 445px;
-    width: 390px;
     border-radius: 25px;
   }
 
-  @include mq(xl) {
+  @include mixins.mq(xl) {
     padding-inline: 20px;
     padding-top: 35px;
 
     gap: 17px;
 
     height: 555px;
-    width: 487px;
     border-radius: 31px;
     border: 3px solid #77C5FD;
   }
 
-  @include mq(xxl) {
+  @include mixins.mq(xxl) {
     padding-inline: 32px;
     padding-top: 52px;
 
     gap: 23px;
 
     height: 835px;
-    width: 732px;
     border-radius: 47px;
     border: 4px solid #77C5FD;
     box-shadow: 0px 2px 20px 4px #77C5FD;
   }
 
-  @include mq(k2) {
+  @include mixins.mq(k2) {
     padding-inline: 41px;
     padding-top: 70px;
 
     gap: 30px;
 
     height: 1112px;
-    width: 976px;
     border-radius: 62px;
     border: 5px solid #77C5FD;
     box-shadow: 0px 2px 20px 4px #77C5FD;
@@ -97,19 +92,19 @@
     margin-left: 8px;
     margin-bottom: 4px;
 
-    @include mq(md) {
+    @include mixins.mq(md) {
       margin-left: 14px;
     }
 
-    @include mq(lg) {
+    @include mixins.mq(lg) {
       margin-bottom: 7px;
     }
 
-    @include mq(xxl) {
+    @include mixins.mq(xxl) {
       margin-bottom: 12px;
     }
 
-    @include mq(k2) {
+    @include mixins.mq(k2) {
       margin-bottom: 14px;
     }
   }

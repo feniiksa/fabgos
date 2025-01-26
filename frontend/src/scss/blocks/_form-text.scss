@@ -1,32 +1,35 @@
-@import "../mixins";
+@use "../mixins";
+@use "../variables";
+
 
 .form-text {
+  $block: &;
   color: black;
-  font-family: $font-family-primary;
+  font-family: variables.$font-family-primary;
   font-size: 8px;
   font-weight: 700;
 
-  @include mq(sm) {
+  @include mixins.mq(sm) {
     font-size: 12px;
   }
 
-  @include mq(md) {
+  @include mixins.mq(md) {
     font-size: 9px;
   }
 
-  @include mq(lg) {
+  @include mixins.mq(lg) {
     font-size: 11px;
   }
 
-  @include mq(xl) {
+  @include mixins.mq(xl) {
     font-size: 14px;
   }
 
-  @include mq(xxl) {
+  @include mixins.mq(xxl) {
     font-size: 20px;
   }
 
-  @include mq(k2) {
+  @include mixins.mq(k2) {
     font-size: 27px;
   }
 
@@ -39,13 +42,13 @@
     width: 100%;
     padding-left: 12px;
 
-    @include mq(sm) {
+    @include mixins.mq(sm) {
       border-radius: 27px;
       height: 31px;
       padding-left: 18px;
     }
 
-    @include mq(md) {
+    @include mixins.mq(md) {
       border-radius: 18px;
       height: 22px;
       padding-left: 13px;
@@ -53,25 +56,25 @@
       background: #F0F8FF;
     }
 
-    @include mq(lg) {
+    @include mixins.mq(lg) {
       border-radius: 25px;
       height: 29px;
       padding-left: 17px;
     }
 
-    @include mq(xl) {
+    @include mixins.mq(xl) {
       border-radius: 31px;
       height: 36px;
       padding-left: 22px;
     }
 
-    @include mq(xxl) {
+    @include mixins.mq(xxl) {
       border-radius: 47px;
       height: 55px;
       padding-left: 33px;
     }
 
-    @include mq(k2) {
+    @include mixins.mq(k2) {
       border-radius: 62px;
       height: 73px;
       padding-left: 43px;
@@ -83,35 +86,35 @@
     padding-inline: 13px;
     padding-block: 6px;
 
-    @include mq(sm) {
+    @include mixins.mq(sm) {
       height: 100px;
       padding-inline: 18px;
       padding-block: 12px;
     }
 
-    @include mq(md) {
+    @include mixins.mq(md) {
       height: 152px;
       padding-inline: 13px;
       padding-block: 13px;
     }
 
-    @include mq(lg) {
+    @include mixins.mq(lg) {
       height: 203px;
       padding-inline: 17px;
     }
 
-    @include mq(xl) {
+    @include mixins.mq(xl) {
       height: 254px;
       padding-inline: 22px;
     }
 
-    @include mq(xxl) {
+    @include mixins.mq(xxl) {
       height: 381px;
       padding-inline: 33px;
       padding-block: 25px;
     }
 
-    @include mq(k2) {
+    @include mixins.mq(k2) {
       height: 508px;
       padding-inline: 43px;
       padding-block: 35px;
@@ -124,32 +127,32 @@
     top: 20px;
     color: #404040;
 
-    @include mq(sm) {
+    @include mixins.mq(sm) {
       left: 18px;
       top: 30px;
     }
 
-    @include mq(md) {
+    @include mixins.mq(md) {
       left: 13px;
       top: 28px;
     }
 
-    @include mq(lg) {
+    @include mixins.mq(lg) {
       top: 34px;
       left: 17px;
     }
 
-    @include mq(xl) {
+    @include mixins.mq(xl) {
       top: 40px;
       left: 22px;
     }
 
-    @include mq(xxl) {
+    @include mixins.mq(xxl) {
       top: 60px;
       left: 33px;
     }
 
-    @include mq(k2) {
+    @include mixins.mq(k2) {
       top: 80px;
       left: 43px;
     }

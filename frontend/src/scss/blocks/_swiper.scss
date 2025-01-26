@@ -1,29 +1,31 @@
-@import "../mixins";
+@use "../mixins";
 
 .swiper-wr {
+  $block: &;
+
   padding-inline: 30px;
 
-  @include mq(sm) {
+  @include mixins.mq(sm) {
     padding-inline: 45px;
   }
 
-  @include mq(md) {
+  @include mixins.mq(md) {
     padding-inline: 84px;
   }
 
-  @include mq(lg) {
+  @include mixins.mq(lg) {
     padding-inline: 120px;
   }
 
-  @include mq(xl) {
+  @include mixins.mq(xl) {
     padding-inline: 148px;
   }
 
-  @include mq(xxl) {
+  @include mixins.mq(xxl) {
     padding-inline: 220px;
   }
 
-  @include mq(k2) {
+  @include mixins.mq(k2) {
     padding-inline: 290px;
   }
 }
@@ -35,37 +37,37 @@
 
   position: relative;
 
-  @include mq(sm) {
+  @include mixins.mq(sm) {
     // width: 465px;
     height: 115px;
     border-radius: 19px;
   }
 
-  @include mq(md) {
+  @include mixins.mq(md) {
     // width: 598px;
     height: 178px;
     border-radius: 30px;
   }
 
-  @include mq(lg) {
+  @include mixins.mq(lg) {
     // width: 799px;
     height: 238px;
     border-radius: 40px;
   }
 
-  @include mq(xl) {
+  @include mixins.mq(xl) {
     // width: 998px;
     height: 297px;
     border-radius: 50px;
   }
 
-  @include mq(xxl) {
+  @include mixins.mq(xxl) {
     // width: 1497px;
     height: 445px;
     border-radius: 75px;
   }
 
-  @include mq(k2) {
+  @include mixins.mq(k2) {
     // width: 1996px;
     height: 594px;
     border-radius: 99px;
@@ -76,32 +78,32 @@
   width: 100%;
   height: 77px;
 
-  @include mq(sm) {
+  @include mixins.mq(sm) {
     // width: 465px;
     height: 115px;
   }
 
-  @include mq(md) {
+  @include mixins.mq(md) {
     // width: 598px;
     height: 178px;
   }
 
-  @include mq(lg) {
+  @include mixins.mq(lg) {
     // width: 799px;
     height: 238px;
   }
 
-  @include mq(xl) {
+  @include mixins.mq(xl) {
     // width: 998px;
     height: 297px;
   }
 
-  @include mq(xxl) {
+  @include mixins.mq(xxl) {
     // width: 1497px;
     height: 445px;
   }
 
-  @include mq(k2) {
+  @include mixins.mq(k2) {
     // width: 1996px;
     height: 594px;
   }

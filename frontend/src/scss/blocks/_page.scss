@@ -1,4 +1,4 @@
-@import "../mixins";
+@use "../mixins";
 
 .page {
   $block: &;
@@ -6,13 +6,67 @@
   flex-direction: column;
 
   &__header {
-    // margin-bottom: 60px;
     scroll-margin-top: 90px;
   }
 
-  &__news {}
+  &__news {
+    margin-bottom: 4px;
+  }
 
   &__objects-wr {
     padding-inline: 28px;
+    margin-bottom: 18px;
+  }
+
+  &__map {
+    margin-bottom: 16px;
+
+    @include mixins.mq(md) {
+      margin-bottom: 67px;
+    }
+  }
+
+  &__fit-wap {
+    padding-inline: 28px;
+    margin-bottom: 16px;
+
+    @include mixins.mq(sm) {
+      padding-inline: 40px;
+    }
+  }
+
+  &__form-descktop {
+    display: none;
+
+    @include mixins.mq(md) {
+      display: block;
+      padding-left: 60px;
+      padding-right: 30px;
+      margin-bottom: 90px;
+    }
+
+    @include mixins.mq(lg) {
+      padding-left: 78px;
+      padding-right: 34px;
+      margin-bottom: 125px;
+    }
+
+    @include mixins.mq(xl) {
+      padding-left: 98px;
+      padding-right: 39px;
+      margin-bottom: 156px;
+    }
+
+    @include mixins.mq(xxl) {
+      padding-left: 147px;
+      padding-right: 44px;
+      margin-bottom: 235px;
+    }
+
+    @include mixins.mq(k2) {
+      padding-left: 196px;
+      padding-right: 58px;
+      margin-bottom: 312px;
+    }
   }
 }

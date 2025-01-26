@@ -1,52 +1,53 @@
-@import "../mixins";
+@use "../mixins";
 
 .map {
+  $block: &;
   padding-inline: 30px;
 
-  @include mq(sm) {
+  @include mixins.mq(sm) {
     padding-inline: 45px;
   }
 
-  @include mq(md) {
+  @include mixins.mq(md) {
     padding-inline: 84px;
   }
 
-  @include mq(lg) {
+  @include mixins.mq(lg) {
     padding-inline: 120px;
   }
 
-  @include mq(xl) {
+  @include mixins.mq(xl) {
     padding-inline: 148px;
   }
 
-  @include mq(xxl) {
+  @include mixins.mq(xxl) {
     padding-inline: 220px;
   }
 
-  @include mq(k2) {
+  @include mixins.mq(k2) {
     padding-inline: 290px;
   }
 
   &__headlines {
     margin-bottom: 3px;
 
-    @include mq(sm) {
+    @include mixins.mq(sm) {
       margin-bottom: 6px;
     }
 
-    @include mq(lg) {
+    @include mixins.mq(lg) {
       margin-bottom: 8px;
     }
 
-    @include mq(xl) {
+    @include mixins.mq(xl) {
       margin-bottom: 11px;
     }
 
-    @include mq(xxl) {
+    @include mixins.mq(xxl) {
       margin-bottom: 17px;
     }
 
-    @include mq(k2) {
+    @include mixins.mq(k2) {
       margin-bottom: 20px;
     }
   }
@@ -54,27 +55,27 @@
   &__text {
     margin-bottom: 11px;
 
-    @include mq(sm) {
+    @include mixins.mq(sm) {
       margin-bottom: 20px;
     }
 
-    @include mq(md) {
+    @include mixins.mq(md) {
       margin-bottom: 48px;
     }
 
-    @include mq(lg) {
+    @include mixins.mq(lg) {
       margin-bottom: 23px;
     }
 
-    @include mq(xl) {
+    @include mixins.mq(xl) {
       margin-bottom: 29px;
     }
 
-    @include mq(xxl) {
+    @include mixins.mq(xxl) {
       margin-bottom: 45px;
     }
 
-    @include mq(k2) {
+    @include mixins.mq(k2) {
       margin-bottom: 57px;
     }
   }
@@ -88,32 +89,32 @@
     overflow: hidden;
     margin: 0 auto;
 
-    @include mq(sm) {
+    @include mixins.mq(sm) {
       height: 160px;
       border-radius: 20px;
     }
 
-    @include mq(md) {
+    @include mixins.mq(md) {
       height: 250px;
       border-radius: 29px;
     }
 
-    @include mq(lg) {
+    @include mixins.mq(lg) {
       height: 223px;
       border-radius: 39px;
     }
 
-    @include mq(xl) {
+    @include mixins.mq(xl) {
       height: 404px;
       border-radius: 49px;
     }
 
-    @include mq(xl) {
+    @include mixins.mq(xl) {
       height: 607px;
       border-radius: 73px;
     }
 
-    @include mq(k2) {
+    @include mixins.mq(k2) {
       height: 809px;
       border-radius: 73px;
     }

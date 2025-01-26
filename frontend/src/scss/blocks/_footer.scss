@@ -1,6 +1,7 @@
-@import "../mixins";
+@use "../mixins";
 
 .footer {
+  $block: &;
   height: 140px;
   background: #F0F8FF;
   padding-inline: 16px;
@@ -8,37 +9,37 @@
 
   position: relative;
 
-  @include mq(sm) {
+  @include mixins.mq(sm) {
     height: 210px;
     padding-inline: 24px;
     padding-block: 14px;
   }
 
-  @include mq(md) {
+  @include mixins.mq(md) {
     height: 63px;
     padding-inline: 13px;
     padding-block: 30px;
   }
 
-  @include mq(lg) {
+  @include mixins.mq(lg) {
     height: 83px;
     padding-inline: 13px;
     padding-block: 30px;
   }
 
-  @include mq(xl) {
+  @include mixins.mq(xl) {
     height: 105px;
     padding-inline: 20px;
     padding-block: 50px;
   }
 
-  @include mq(xxl) {
+  @include mixins.mq(xxl) {
     height: 158px;
     padding-inline: 70px;
     padding-block: 35px;
   }
 
-  @include mq(k2) {
+  @include mixins.mq(k2) {
     height: 210px;
     padding-inline: 100px;
   }
@@ -51,12 +52,12 @@
     font-weight: 400;
     font-size: 7px;
 
-    @include mq(sm) {
+    @include mixins.mq(sm) {
       gap: 10px;
       font-size: 10px;
     }
 
-    @include mq(md) {
+    @include mixins.mq(md) {
       gap: 4px;
       font-size: 8px;
       position: absolute;
@@ -64,27 +65,27 @@
       left: 30px;
     }
 
-    @include mq(lg) {
+    @include mixins.mq(lg) {
       gap: 6px;
       font-size: 11px;
       bottom: 14px;
       left: 30px;
     }
 
-    @include mq(xl) {
+    @include mixins.mq(xl) {
       font-size: 14px;
       bottom: 20px;
       left: 40px;
     }
 
-    @include mq(xxl) {
+    @include mixins.mq(xxl) {
       gap: 10px;
       font-size: 20px;
       bottom: 30px;
       left: 57px;
     }
 
-    @include mq(k2) {
+    @include mixins.mq(k2) {
       gap: 14px;
       font-size: 27px;
       bottom: 40px;
@@ -107,7 +108,7 @@
   }
 
   &__wraper {
-    @include mq(md) {
+    @include mixins.mq(md) {
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -117,21 +118,21 @@
       top: 11px;
     }
 
-    @include mq(lg) {
+    @include mixins.mq(lg) {
       top: 14px;
     }
 
-    @include mq(xl) {
+    @include mixins.mq(xl) {
       top: 20px;
       right: 40px;
     }
 
-    @include mq(xxl) {
+    @include mixins.mq(xxl) {
       top: 30px;
       right: 50px;
     }
 
-    @include mq(k2) {
+    @include mixins.mq(k2) {
       top: 40px;
       right: 90px;
     }
@@ -140,25 +141,25 @@
   &__clue {
     display: none;
 
-    @include mq(md) {
+    @include mixins.mq(md) {
       display: block;
       font-weight: 600;
       font-size: 11px;
     }
 
-    @include mq(lg) {
+    @include mixins.mq(lg) {
       font-size: 15px;
     }
 
-    @include mq(xl) {
+    @include mixins.mq(xl) {
       font-size: 18px;
     }
 
-    @include mq(xxl) {
+    @include mixins.mq(xxl) {
       font-size: 27px;
     }
 
-    @include mq(k2) {
+    @include mixins.mq(k2) {
       font-size: 35px;
     }
   }
@@ -171,12 +172,12 @@
     position: absolute;
     bottom: 10px;
 
-    @include mq(sm) {
+    @include mixins.mq(sm) {
       gap: 4px;
       bottom: 14px;
     }
 
-    @include mq(md) {
+    @include mixins.mq(md) {
       bottom: none;
       position: relative;
     }
@@ -186,27 +187,27 @@
     height: 21px;
     width: 21px;
 
-    @include mq(sm) {
+    @include mixins.mq(sm) {
       height: 30px;
       width: 30px;
     }
 
-    @include mq(lg) {
+    @include mixins.mq(lg) {
       height: 37px;
       width: 37px;
     }
 
-    @include mq(xl) {
+    @include mixins.mq(xl) {
       height: 47px;
       width: 47px;
     }
 
-    @include mq(xxl) {
+    @include mixins.mq(xxl) {
       height: 69px;
       width: 69px;
     }
 
-    @include mq(k2) {
+    @include mixins.mq(k2) {
       height: 92px;
       width: 92px;
     }
@@ -216,7 +217,7 @@
     height: 100%;
     width: 100%;
 
-    @include mq(md) {
+    @include mixins.mq(md) {
       display: none;
     }
   }
@@ -224,7 +225,7 @@
   &__img-desk {
     display: none;
 
-    @include mq(md) {
+    @include mixins.mq(md) {
       height: 100%;
       width: 100%;
       display: block;
@@ -240,31 +241,31 @@
     // top: 50%;
     transform: translateX(-50%);
 
-    @include mq(sm) {
+    @include mixins.mq(sm) {
       height: 75px;
       bottom: 14px;
     }
 
-    @include mq(md) {
+    @include mixins.mq(md) {
       height: 47px;
       bottom: 50%;
       left: 50%;
       transform: translate(-50%, 50%);
     }
 
-    @include mq(lg) {
+    @include mixins.mq(lg) {
       height: 62px;
     }
 
-    @include mq(xl) {
+    @include mixins.mq(xl) {
       height: 78px;
     }
 
-    @include mq(xxl) {
+    @include mixins.mq(xxl) {
       height: 117px;
     }
 
-    @include mq(k2) {
+    @include mixins.mq(k2) {
       height: 157px;
     }
   }
