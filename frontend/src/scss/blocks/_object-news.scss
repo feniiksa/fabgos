@@ -1,0 +1,13 @@
+@import "../mixins";
+
+.object-news {
+  &__swiper-wr {
+    height: 210px;
+  }
+
+  &__info {}
+
+  &__headlines {}
+
+  &__text {}
+}

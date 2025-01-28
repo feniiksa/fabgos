@@ -33,4 +33,29 @@
     background-color: #3CADFE;
     color: #ffffff;
   }
+
+  // &--item {
+  //   $block: &;
+
+  //   @include mixins.mq(md) {
+  //     display: flex;
+  //     align-items: center;
+  //     justify-content: center;
+  //     background-color: #ADADAD;
+  //     border: none;
+  //     color: #ffffff;
+  //     height: 13px;
+  //   }
+
+
+
+
+  //   &__circle {
+  //     border: 1px solid #ffffff;
+  //     background: #ffffff;
+  //     width: 7px;
+  //     height: 7px;
+  //     border-radius: 50%;
+  //   }
+  // }
 }

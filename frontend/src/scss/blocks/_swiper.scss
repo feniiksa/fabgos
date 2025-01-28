@@ -3,31 +3,31 @@
 .swiper-wr {
   $block: &;
 
-  padding-inline: 30px;
+  padding-inline: 5px;
 
   @include mixins.mq(sm) {
-    padding-inline: 45px;
+    padding-inline: 10px;
   }
 
-  @include mixins.mq(md) {
-    padding-inline: 84px;
-  }
+  // @include mixins.mq(md) {
+  //   padding-inline: 80px;
+  // }
 
-  @include mixins.mq(lg) {
-    padding-inline: 120px;
-  }
+  // @include mixins.mq(lg) {
+  //   padding-inline: 110px;
+  // }
 
-  @include mixins.mq(xl) {
-    padding-inline: 148px;
-  }
+  // @include mixins.mq(xl) {
+  //   padding-inline: 140px;
+  // }
 
-  @include mixins.mq(xxl) {
-    padding-inline: 220px;
-  }
+  // @include mixins.mq(xxl) {
+  //   padding-inline: 220px;
+  // }
 
-  @include mixins.mq(k2) {
-    padding-inline: 290px;
-  }
+  // @include mixins.mq(k2) {
+  //   padding-inline: 290px;
+  // }
 }
 
 .swiper {

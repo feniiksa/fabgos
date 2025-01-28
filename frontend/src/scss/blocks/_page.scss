@@ -11,11 +11,51 @@
 
   &__news {
     margin-bottom: 4px;
+
+    @include mixins.mq(md) {
+      margin-bottom: 38px;
+    }
+
+    @include mixins.mq(lg) {
+      margin-bottom: 51px;
+    }
+
+    @include mixins.mq(xl) {
+      margin-bottom: 65px;
+    }
+
+    @include mixins.mq(xxl) {
+      margin-bottom: 97px;
+    }
+
+    @include mixins.mq(k2) {
+      margin-bottom: 127px;
+    }
   }
 
   &__objects-wr {
     padding-inline: 28px;
     margin-bottom: 18px;
+
+    @include mixins.mq(md) {
+      margin-bottom: 38px;
+    }
+
+    @include mixins.mq(lg) {
+      margin-bottom: 51px;
+    }
+
+    @include mixins.mq(xl) {
+      margin-bottom: 65px;
+    }
+
+    @include mixins.mq(xxl) {
+      margin-bottom: 97px;
+    }
+
+    @include mixins.mq(k2) {
+      margin-bottom: 127px;
+    }
   }
 
   &__map {
@@ -23,6 +63,22 @@
 
     @include mixins.mq(md) {
       margin-bottom: 67px;
+    }
+
+    @include mixins.mq(lg) {
+      margin-bottom: 75px;
+    }
+
+    @include mixins.mq(xl) {
+      margin-bottom: 115px;
+    }
+
+    @include mixins.mq(xxl) {
+      margin-bottom: 212px;
+    }
+
+    @include mixins.mq(k2) {
+      margin-bottom: 309px;
     }
   }
 
@@ -67,6 +123,23 @@
       padding-left: 196px;
       padding-right: 58px;
       margin-bottom: 312px;
+    }
+  }
+
+  &__news,
+  &__objects-wr,
+  __map {
+
+    @include mixins.mq(md) {
+      padding-inline: 80px;
+    }
+
+    @include mixins.mq(lg) {
+      padding-inline: 110px;
+    }
+
+    @include mixins.mq(xl) {
+      padding-inline: 140px;
     }
   }
 }

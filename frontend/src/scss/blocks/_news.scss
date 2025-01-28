@@ -2,10 +2,20 @@
 
 .news {
   $block: &;
+
   &__headlines {
     text-align: center;
     margin-bottom: 16px;
+
+    @include mixins.mq(md) {
+      text-align: left;
+      // padding-inline: 80px;
+    }
+
+    // @include mixins.mq(lg) {
+    //   padding-inline: 110px;
+    // }
   }
 
-  &__swiper-wr {}
+  // &__swiper-wr {}
 }

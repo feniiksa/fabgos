@@ -60,7 +60,8 @@
     }
 
     @include mixins.mq(md) {
-      margin-bottom: 48px;
+      margin-bottom: 14px;
+      padding-right: 300px;
     }
 
     @include mixins.mq(lg) {

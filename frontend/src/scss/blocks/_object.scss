@@ -11,7 +11,7 @@
   height: 106px;
   width: 100%;
   border-radius: 13px;
-  background-image: url(./src/img/new.png);
+  background-image: url(./src/img/card.png);
   background-repeat: no-repeat;
   background-size: cover;
 
@@ -57,7 +57,7 @@
   &::before {
     content: "";
     border-radius: 13px;
-    z-index: 1;
+    z-index: 2;
     position: absolute;
     top: 0;
     left: 0;

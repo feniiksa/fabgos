@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script type="module" src="/main.js" defer></script>
-  <title>Document</title>
+  <title>inner</title>
 </head>
 
 <body class="page">
@@ -37,9 +37,8 @@
     <!-- </header> -->
   </section>
 
-  <section class="page__news news">
-    <h2 class="news__headlines headlines">Новости</h2>
-    <div class="news__swiper-wr swiper-wr">
+  <section class="page__object-news object-news">
+    <div class="object-news__swiper-wr swiper-wr swiper-wr--object">
       <div class="swiper my-swiper">
         <div class="swiper__swiper-wrapper swiper-wrapper">
           <div class="swiper__swiper-slide swiper-slide">
@@ -66,57 +65,17 @@
         <div class="swiper__swiper-pagination swiper-pagination"></div>
       </div>
     </div>
+    <div class="object-news__info">
+      <h2 class="object-news__headlines">Новости</h2>
+      <p class="object-news__text">
+        Теперь вы сами можете решать, как меняется город.
+        Публикуйте собственные предложения и
+        голосуйте за уже выдвинутые инициативы
+      </p>
+    </div>
   </section>
 
-  <section class="page__objects-wr objects-wr">
-    <h2 class="objects-wr__headlines headlines">Объекты</h2>
-    <p class="objects-wr__text text">
-      Теперь вы сами можете решать, как меняется город.
-      Публикуйте собственные предложения и
-      голосуйте за уже выдвинутые инициативы
-    </p>
-    <div class="objects-wr__filters">
-      <div class="filter">
-        <h3 class="filter__h3">Фильтр</h3>
-        <img class="filter__img" src="./src/img/str.svg" alt="">
-      </div>
-      <div class="filter filter--color">
-        <h3 class="filter__h3">Категории</h3>
-        <img class="filter__img" src="./src/img/str-w.svg" alt="">
-      </div>
-    </div>
-    <div class="objects-wr__objects objects">
-      <div class="object">
-        <!-- <img class="object__img" src="./src/img/ts.avif" alt=""> -->
-        <h4 class="object__h4">Гл.Текст</h4>
-        <p class="object__description">Описание</p>
-      </div>
-      <div class="object">
-        <!-- <img src="./src/img/ts.avif" alt=""> -->
-        <h4 class="object__h4">Гл.Текст</h4>
-        <p class="object__description">Описание</p>
-      </div>
-      <div class="object">
-        <!-- <img src="./src/img/ts.avif" alt=""> -->
-        <h4 class="object__h4">Гл.Текст</h4>
-        <p class="object__description">Описание</p>
-      </div>
-      <div class="object">
-        <!-- <img src="./src/img/ts.avif" alt=""> -->
-        <h4 class="object__h4">Гл.Текст</h4>
-        <p class="object__description">Описание</p>
-      </div>
-      <div class="object">
-        <!-- <img src="./src/img/ts.avif" alt=""> -->
-        <h4 class="object__h4">Гл.Текст</h4>
-        <p class="object__description">Описание</p>
-      </div>
-      <button class="btn btn--card">
-        <h3 class="btn--card__h3">Все <br> объекты</h3>
-        <span class="btn--card__link">Перейти</span>
-      </button>
-    </div>
-  </section>
+
 
   <section class="page__map">
     <div class="map">

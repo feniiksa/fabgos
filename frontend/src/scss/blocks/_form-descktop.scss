@@ -3,28 +3,28 @@
 
 .form-descktop {
   &__wap {
-    padding-inline: 200px;
+    padding-right: 400px;
     text-align: center;
     margin-bottom: 10px;
 
     @include mixins.mq(lg) {
       margin-bottom: 15px;
-      padding-inline: 250px;
+      padding-right: 500px;
     }
 
     @include mixins.mq(xl) {
       margin-bottom: 19px;
-      padding-inline: 300px;
+      padding-right: 660px;
     }
 
     @include mixins.mq(xxl) {
       margin-bottom: 28px;
-      padding-inline: 450px;
+      padding-right: 1010px;
     }
 
     @include mixins.mq(k2) {
       margin-bottom: 35px;
-      padding-inline: 650px;
+      padding-right: 1400px;
     }
   }
 

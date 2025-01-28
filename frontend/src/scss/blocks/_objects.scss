@@ -1,8 +1,29 @@
 @use "../mixins";
 
 .objects {
+
   display: grid;
-  flex-wrap: unset;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 50% 50%;
   gap: 35px 10px;
+
+  @include mixins.mq(sm) {
+    gap: 35px 15px;
+  }
+
+  @include mixins.mq(md) {
+    gap: 40px 23px;
+  }
+
+  @include mixins.mq(lg) {
+    gap: 40px 30px;
+  }
+
+  @include mixins.mq(xl) {
+    gap: 40px 38px;
+  }
+
+  @include mixins.mq(xxl) {
+    gap: 40px 57px;
+  }
+
 }
