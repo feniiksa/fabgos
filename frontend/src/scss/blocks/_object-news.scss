@@ -1,13 +1,25 @@
-@import "../mixins";
+@use "../mixins";
+@use "../variables";
 
 .object-news {
   &__swiper-wr {
-    height: 210px;
+    padding-inline: 58px;
+
+    @include mixins.mq(sm) {
+      padding-inline: 88px;
+    }
   }
 
-  &__info {}
+  &__info {
+    margin-inline: 32px;
+  }
 
-  &__headlines {}
+  &__headlines {
+    margin-bottom: 7px;
+    font-size: 20px;
+  }
 
-  &__text {}
+  &__text {
+    font-size: 8px;
+  }
 }

@@ -68,124 +68,124 @@
     @include mixins.mq(sm) {
       border-radius: 19px;
     }
-  
+
     @include mixins.mq(md) {
       border-radius: 29px;
     }
-  
+
     @include mixins.mq(lg) {
       border-radius: 39px;
     }
-  
+
     @include mixins.mq(xl) {
       border-radius: 49px;
     }
-  
+
     @include mixins.mq(xxl) {
       border-radius: 73px;
     }
-  
+
     @include mixins.mq(k2) {
       border-radius: 98px;
     }
   }
 
 
-  &__h4 {
-    font-size: 12px;
-    z-index: 2;
-    margin-bottom: 6px;
+&__h4 {
+  font-size: 12px;
+  z-index: 2;
+  margin-bottom: 6px;
 
-    @include mixins.mq(sm) {
-      font-size: 14px;
-      margin-bottom: 8px;
-    }
-
-    @include mixins.mq(md) {
-      font-size: 21px;
-      margin-bottom: 12px;
-    }
-
-    @include mixins.mq(lg) {
-      font-size: 29px;
-      margin-bottom: 17px;
-    }
-
-    @include mixins.mq(xl) {
-      font-size: 36px;
-      margin-bottom: 20px;
-    }
-
-    @include mixins.mq(xxl) {
-      font-size: 53px;
-      margin-bottom: 30px;
-    }
-
-    @include mixins.mq(k2) {
-      font-size: 71px;
-      margin-bottom: 40px;
-    }
+  @include mixins.mq(sm) {
+    font-size: 14px;
+    margin-bottom: 8px;
   }
 
-  &__description {
-    font-size: 5px;
-    z-index: 2;
-
-    @include mixins.mq(sm) {
-      font-size: 6px;
-    }
-
-    @include mixins.mq(md) {
-      font-size: 8px;
-    }
-
-    @include mixins.mq(lg) {
-      font-size: 11px;
-    }
-
-    @include mixins.mq(xl) {
-      font-size: 13px;
-    }
-
-    @include mixins.mq(xxl) {
-      font-size: 20px;
-    }
-
-    @include mixins.mq(k2) {
-      font-size: 27px;
-    }
+  @include mixins.mq(md) {
+    font-size: 21px;
+    margin-bottom: 12px;
   }
 
-  // &--big{
+  @include mixins.mq(lg) {
+    font-size: 29px;
+    margin-bottom: 17px;
+  }
 
-  //   width: 250px;
-  //   height: 200px;
-  //   margin-left: 30px;
-  //   border-radius: 20px;
-  //   padding: 20px;
+  @include mixins.mq(xl) {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
 
-  //   &__h4 {
-  //     font-size: 20px;
-  //     z-index: 2;
-  //   }
+  @include mixins.mq(xxl) {
+    font-size: 53px;
+    margin-bottom: 30px;
+  }
 
-  //   &__description {
-  //     font-size: 15px;
-  //     z-index: 2;
-  //   }
+  @include mixins.mq(k2) {
+    font-size: 71px;
+    margin-bottom: 40px;
+  }
+}
 
-  //   &::before{
-  //     content: "";
-  //     border-radius: 20px;
-  //     z-index: 1;
-  //     position: absolute;
-  //     top: 0;
-  //     left: 0; 
-  //     right: 0; 
-  //     bottom: 0;
-  //     background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 30%, rgba(32, 122, 224, 0.8 ));
-  //   }
+&__description {
+  font-size: 5px;
+  z-index: 2;
+
+  @include mixins.mq(sm) {
+    font-size: 6px;
+  }
+
+  @include mixins.mq(md) {
+    font-size: 8px;
+  }
+
+  @include mixins.mq(lg) {
+    font-size: 11px;
+  }
+
+  @include mixins.mq(xl) {
+    font-size: 13px;
+  }
+
+  @include mixins.mq(xxl) {
+    font-size: 20px;
+  }
+
+  @include mixins.mq(k2) {
+    font-size: 27px;
+  }
+}
+
+// &--big{
+
+//   width: 250px;
+//   height: 200px;
+//   margin-left: 30px;
+//   border-radius: 20px;
+//   padding: 20px;
+
+//   &__h4 {
+//     font-size: 20px;
+//     z-index: 2;
+//   }
+
+//   &__description {
+//     font-size: 15px;
+//     z-index: 2;
+//   }
+
+//   &::before{
+//     content: "";
+//     border-radius: 20px;
+//     z-index: 1;
+//     position: absolute;
+//     top: 0;
+//     left: 0; 
+//     right: 0; 
+//     bottom: 0;
+//     background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 30%, rgba(32, 122, 224, 0.8 ));
+//   }
 
 
-  // }
+// }
 }

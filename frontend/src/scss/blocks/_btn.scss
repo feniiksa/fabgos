@@ -117,7 +117,7 @@
 
     &__h3 {
       font-size: 16px;
-      // font-weight: 700 !important; не читает((((
+      text-align: start;
 
       @include mixins.mq(sm) {
         font-size: 24px;

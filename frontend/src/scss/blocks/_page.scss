@@ -10,7 +10,7 @@
   }
 
   &__news {
-    margin-bottom: 4px;
+    margin-bottom: 30px;
 
     @include mixins.mq(md) {
       margin-bottom: 38px;
