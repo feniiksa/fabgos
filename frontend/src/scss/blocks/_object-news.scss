@@ -63,7 +63,7 @@
   }
 
   &__headlines {
-    margin-bottom: 7px;
+    margin-bottom: 15px;
     font-size: 20px;
 
     @include mixins.mq(sm) {
@@ -91,8 +91,13 @@
     }
   }
 
+  &__move {
+    margin-bottom: 15px;
+  }
+
   &__text {
     font-size: 8px;
+    margin-bottom: 30px;
 
     @include mixins.mq(sm) {
       font-size: 13px;
