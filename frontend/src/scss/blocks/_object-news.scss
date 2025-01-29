@@ -2,24 +2,282 @@
 @use "../variables";
 
 .object-news {
+  margin-bottom: 38px;
+
+  @include mixins.mq(md) {
+    display: grid;
+    grid-template-columns: 45% 55%;
+    gap: 35px;
+    padding-inline: 100px;
+  }
+
+  @include mixins.mq(lg) {
+    gap: 47px;
+    padding-inline: 140px;
+  }
+
+  @include mixins.mq(xl) {
+    gap: 59px;
+    padding-inline: 165px;
+  }
+
+  @include mixins.mq(xxl) {
+    gap: 88px;
+    padding-inline: 240px;
+  }
+
+  @include mixins.mq(k2) {
+    gap: 117px;
+    padding-inline: 315px;
+  }
+
+  .swiper-wr--object {
+    min-width: 0;
+  }
+
   &__swiper-wr {
-    padding-inline: 58px;
+    padding-inline: 70px;
+    margin-bottom: 14px;
 
     @include mixins.mq(sm) {
       padding-inline: 88px;
+      margin-bottom: 20px;
+    }
+
+    @include mixins.mq(md) {
+      padding-inline: 0;
+      margin-bottom: 0;
     }
   }
 
   &__info {
     margin-inline: 32px;
+
+    @include mixins.mq(sm) {
+      margin-inline: 50px;
+    }
+
+    @include mixins.mq(md) {
+      margin-inline: 0;
+    }
   }
 
   &__headlines {
     margin-bottom: 7px;
     font-size: 20px;
+
+    @include mixins.mq(sm) {
+      font-size: 29px;
+    }
+
+    @include mixins.mq(md) {
+      font-size: 25px;
+    }
+
+    @include mixins.mq(lg) {
+      font-size: 34px;
+    }
+
+    @include mixins.mq(xl) {
+      font-size: 43px;
+    }
+
+    @include mixins.mq(xxl) {
+      font-size: 64px;
+    }
+
+    @include mixins.mq(k2) {
+      font-size: 85px;
+    }
   }
 
   &__text {
     font-size: 8px;
+
+    @include mixins.mq(sm) {
+      font-size: 13px;
+    }
+
+    @include mixins.mq(md) {
+      font-size: 8px;
+    }
+
+    @include mixins.mq(lg) {
+      font-size: 11px;
+    }
+
+    @include mixins.mq(xl) {
+      font-size: 13px;
+    }
+
+    @include mixins.mq(xxl) {
+      font-size: 20px;
+    }
+
+    @include mixins.mq(k2) {
+      font-size: 27px;
+    }
+  }
+}
+
+.swiper-wr--object .swiper {
+  width: 100%;
+  height: 200px;
+  border-radius: 16px;
+
+  box-shadow: 0px 5px 12px 2px #77C5FD;
+
+  @include mixins.mq(sm) {
+    height: 315px;
+    border-radius: 23px;
+  }
+
+  @include mixins.mq(md) {
+    height: 280px;
+    border-radius: 28px;
+  }
+
+  @include mixins.mq(lg) {
+    height: 375px;
+    border-radius: 38px;
+  }
+
+  @include mixins.mq(xl) {
+    height: 469px;
+    border-radius: 48px;
+  }
+
+  @include mixins.mq(xxl) {
+    height: 703px;
+    border-radius: 72px;
+  }
+
+  @include mixins.mq(k2) {
+    height: 937px;
+    border-radius: 96px;
+  }
+
+}
+
+
+.swiper-wr--object .swiper-pagination {
+  bottom: -20px !important;
+
+  @include mixins.mq(xxl) {
+    bottom: -30px !important;
+  }
+
+  @include mixins.mq(k2) {
+    bottom: -40px !important;
+  }
+}
+
+
+.swiper-wr--object .swiper-button-prev::after,
+.swiper-wr--object .swiper-button-next::after {
+  display: block;
+  color: #000;
+  font-size: 15px;
+
+  @include mixins.mq(md) {
+    font-size: 13px;
+  }
+
+  @include mixins.mq(lg) {
+    font-size: 17px;
+  }
+
+  @include mixins.mq(xl) {
+    font-size: 20px;
+  }
+
+  @include mixins.mq(xxl) {
+    font-size: 30px;
+  }
+
+  @include mixins.mq(k2) {
+    font-size: 40px;
+  }
+}
+
+.swiper-wr--object .swiper-button-prev {
+  left: 40px;
+
+  @include mixins.mq(sm) {
+    left: 60px;
+  }
+
+  @include mixins.mq(md) {
+    left: -25px;
+  }
+
+  @include mixins.mq(lg) {
+    left: -30px;
+  }
+
+  @include mixins.mq(xxl) {
+    left: -40px;
+  }
+
+  @include mixins.mq(k2) {
+    left: -50px;
+  }
+}
+
+.swiper-wr--object .swiper-button-next {
+  right: 40px;
+
+  @include mixins.mq(sm) {
+    right: 60px;
+  }
+
+  @include mixins.mq(md) {
+    right: -25px;
+  }
+
+  @include mixins.mq(lg) {
+    right: -30px;
+  }
+
+  @include mixins.mq(xxl) {
+    right: -40px;
+  }
+
+  @include mixins.mq(k2) {
+    right: -50px;
+  }
+}
+
+.swiper-wr--object .swiper-pagination-bullet {
+  height: 8px;
+  width: 8px;
+  margin: 0 2px !important;
+
+  @include mixins.mq(md) {
+    margin: 0 3px !important;
+  }
+
+  @include mixins.mq(lg) {
+    height: 9px;
+    width: 9px;
+    margin: 0 4px !important;
+  }
+
+  @include mixins.mq(xl) {
+    height: 11px;
+    width: 11px;
+    margin: 0 5px !important;
+  }
+
+  @include mixins.mq(xxl) {
+    height: 17px;
+    width: 17px;
+    margin: 0 8px !important;
+  }
+
+  @include mixins.mq(k2) {
+    height: 24px;
+    width: 24px;
+    margin: 0 11px !important;
   }
 }
