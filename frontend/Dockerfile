@@ -1,5 +1,4 @@
-
-# Используем официальный образ Node.js
+# Используем официальный образ Node.js для сборки
 FROM node:18 AS builder
 
 # Устанавливаем рабочую директорию
@@ -17,19 +16,16 @@ COPY . .
 # Создаем сборку проекта
 RUN npm run build
 
-# Используем легкий HTTP-сервер для статических файлов
-FROM node:18-slim AS production
+# Используем официальный образ Nginx для продакшна
+FROM nginx:alpine AS production
 
-WORKDIR /app
+# Копируем собранные файлы из предыдущего шага в папку Nginx
+COPY --from=builder /app/dist /usr/share/nginx/html
 
-# Устанавливаем 'serve' для обслуживания статических файлов
-RUN npm install -g serve
+# Копируем кастомный конфиг Nginx (если нужно)
+COPY nginx.conf /etc/nginx/conf.d/default.conf
 
-# Копируем собранные файлы из предыдущего шага
-COPY --from=builder /app/dist /app/dist
+# Открываем 80 порт (по умолчанию для HTTP)
+EXPOSE 80
 
-# Указываем команду по умолчанию
-CMD ["serve", "-s", "dist", "-l", "3000"]
-
-# Открываем 3000 порт
-EXPOSE 3000
+# Команда по умолчанию (Nginx запускается автоматически)
