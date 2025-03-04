@@ -109,6 +109,7 @@
 
     @include mixins.mq(lg) {
       font-size: 11px;
+      margin-bottom: 46px;
     }
 
     @include mixins.mq(xl) {
@@ -117,6 +118,7 @@
 
     @include mixins.mq(xxl) {
       font-size: 20px;
+      margin-bottom: 111px;
     }
 
     @include mixins.mq(k2) {
