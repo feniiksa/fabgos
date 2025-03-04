@@ -126,6 +126,8 @@
     left: 13px;
     top: 20px;
     color: #404040;
+    // transition: opacity 0.3s ease; // Плавное исчезновение
+    // pointer-events: none; // Чтобы label не мешал вводу
 
     @include mixins.mq(sm) {
       left: 18px;
@@ -157,4 +159,9 @@
       left: 43px;
     }
   }
+
+  // .form-text--desk:not(:placeholder-shown)+.form-text--holder {
+  //   opacity: 0;
+  // }
+
 }

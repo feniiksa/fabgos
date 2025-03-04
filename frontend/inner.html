@@ -191,8 +191,8 @@
         </div>
         <div class="form__cont">
           <div class="form__form-text form-text">Текст обратной связи</div>
-          <textarea class="form-text form-text--desk form-text--big" id="inputText" name="text" rows="5"></textarea>
-          <label class="form-text form-text--holder" for="inputText">Введите текст</label>
+          <textarea class="form-text form-text--desk form-text--big" id="inputText" name="text" rows="5">Введите текст</textarea>
+          <!-- <label class="form-text form-text--holder" for="inputText">Введите текст</label> -->
         </div>
         <button class="form__btn btn">Подать обращение</button>
       </form>
@@ -200,6 +200,21 @@
         <img src="./src/img/img.png" alt="">
       </div>
     </div>
+
+    <!-- <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        const textarea = document.getElementById('inputText');
+        const label = document.getElementById('inputLabel');
+
+        textarea.addEventListener('input', function () {
+          if (textarea.value.trim() !== '') {
+            label.style.opacity = '0'; // Скрываем label, если есть текст
+          } else {
+            label.style.opacity = '1'; // Показываем label, если текстовое поле пустое
+          }
+        });
+      });
+    </script> -->
   </section>
 
   <section class="page__fit-wap">

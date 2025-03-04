@@ -2,36 +2,227 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script type="module" src="./main.js" defer></script>
-  <title>Vite App</title>
-  <style>
-    html,
-    body {
-      height: 100%;
-    }
-
-    body {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-
-    a:hover {
-      text-decoration: none;
-    }
-  </style>
+  <title>Document</title>
 </head>
 
-<body>
+<body class="page">
+  <section class="page__header header">
+    <!-- <header class="header"> -->
+    <div class="header__img">
+      <img class="header__burger-icon" src="./src/img/br.svg" alt="">
+    </div>
+    <div class="header__logo-wap">
+      <div class="header__logo"></div>
+      <p class="header__logo-text text">Название сервиса</p>
+    </div>
+    <nav class="header__nav nav">
+      <ul class="nav__ul">
+        <li class="nav__li">
+          <a class="nav__link link link--active" href="#">Новости</a>
+        </li>
+        <li class="nav__li">
+          <a class="nav__link link" href="#">Объекты</a>
+        </li>
+        <li class="nav__li">
+          <a class="nav__link link" href="#">Карта</a>
+        </li>
+        <li class="nav__li">
+          <a class="nav__link link" href="#">Подать обращение</a>
+        </li>
+      </ul>
+    </nav>
+    <!-- </header> -->
+  </section>
 
-  <ul>
-    <li><a href="/home.html">Home page</a></li>
-    <li><a href="/inner.html">Product</a></li>
-    <li><a href="/ui.html">UI</a></li>
-  </ul>
+  <section class="page__news news">
+    <h2 class="news__headlines headlines">Новости</h2>
+    <div class="news__swiper-wr swiper-wr">
+      <div class="swiper my-swiper">
+        <div class="my-swiper__swiper-wrapper swiper-wrapper">
+          <div class="my-swiper__swiper-slide swiper-slide">
+            <div class="swiper-slide__img">
+              <img src="./src/img/my.jpeg" alt="">
+            </div>
+            <div class="swiper-slide__info">
+              <div class="swiper-slide__text">
+                <h4 class="swiper-slide__h4">Реконструкция стадиона</h4>
+                <p class="swiper-slide__description">Описание</p>
+              </div>
+              <span class="btn--card__link">Перейти</span>
+            </div>
+          </div>
+          <div class="my-swiper__swiper-slide swiper-slide">
+            <div class="swiper-slide__img">
+              <img src="./src/img/my.jpeg" alt="">
+            </div>
+            <div class="swiper-slide__info">
+              <div class="swiper-slide__text">
+                <h4 class="swiper-slide__h4">Реконструкция стадиона</h4>
+                <p class="swiper-slide__description">Описание</p>
+              </div>
+              <span class="btn--card__link">Перейти</span>
+            </div>
+          </div>
+          <div class="my-swiper__swiper-slide swiper-slide">
+            <div class="swiper-slide__img">
+              <img src="./src/img/my.jpeg" alt="">
+            </div>
+            <div class="swiper-slide__info">
+              <div class="swiper-slide__text">
+                <h4 class="swiper-slide__h4">Реконструкция стадиона</h4>
+                <p class="swiper-slide__description">Описание</p>
+              </div>
+              <span class="btn--card__link">Перейти</span>
+            </div>
+          </div>
+        </div>
 
+        <div class="my-swiper__swiper-button-prev swiper-button-prev"></div>
+        <div class="my-swiper__swiper-button-next swiper-button-next"></div>
+
+        <div class="my-swiper__swiper-scrollbar swiper-scrollbar"></div>
+      </div>
+      <div class="my-swiper__swiper-pagination swiper-pagination"></div>
+    </div>
+  </section>
+
+  <section class="page__objects-wr objects-wr">
+    <h2 class="objects-wr__headlines headlines">Объекты</h2>
+    <p class="objects-wr__text text">
+      Теперь вы сами можете решать, как меняется город.
+      Публикуйте собственные предложения и
+      голосуйте за уже выдвинутые инициативы
+    </p>
+    <div class="objects-wr__filters">
+      <div class="filter">
+        <h3 class="filter__h3">Фильтр</h3>
+        <img class="filter__img" src="./src/img/str.svg" alt="">
+      </div>
+      <div class="filter filter--color">
+        <h3 class="filter__h3">Категории</h3>
+        <img class="filter__img" src="./src/img/str-w.svg" alt="">
+      </div>
+    </div>
+    <div class="objects-wr__objects objects">
+      <a href="/inner.html">
+        <div class="object">
+          <!-- <img class="object__img" src="./src/img/ts.avif" alt=""> -->
+          <h4 class="object__h4">Гл.Текст</h4>
+          <p class="object__description">Описание</p>
+        </div>
+      </a>
+      <a href="/inner.html">
+        <div class="object">
+          <!-- <img class="object__img" src="./src/img/ts.avif" alt=""> -->
+          <h4 class="object__h4">Гл.Текст</h4>
+          <p class="object__description">Описание</p>
+        </div>
+      </a>
+      <a href="/inner.html">
+        <div class="object">
+          <!-- <img class="object__img" src="./src/img/ts.avif" alt=""> -->
+          <h4 class="object__h4">Гл.Текст</h4>
+          <p class="object__description">Описание</p>
+        </div>
+      </a>
+      <a href="/inner.html">
+        <div class="object">
+          <!-- <img class="object__img" src="./src/img/ts.avif" alt=""> -->
+          <h4 class="object__h4">Гл.Текст</h4>
+          <p class="object__description">Описание</p>
+        </div>
+      </a>
+      <a href="/inner.html">
+        <div class="object">
+          <!-- <img class="object__img" src="./src/img/ts.avif" alt=""> -->
+          <h4 class="object__h4">Гл.Текст</h4>
+          <p class="object__description">Описание</p>
+        </div>
+      </a>
+      <a href="/objects.html" class="btn btn--card">
+        <h3 class="btn--card__h3">Все <br> объекты</h3>
+        <span class="btn--card__link">Перейти</span>
+      </a>
+    </div>
+  </section>
+
+  <section class="page__map">
+    <div class="map">
+      <h2 class="map__headlines headlines">Интерактивная <br> карта</h2>
+      <p class="map__text text">
+        Здесь вы можете отслеживать изменения в вашем районе
+        а так же наблюдать за процессами
+        строительства по всему городу
+      </p>
+      <div class="map__wrap">
+        <script type="text/javascript" charset="utf-8" async
+          src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Af3fc81b321fa22131dc6de4483ffe0d033c32491ea60620efa87eb3fb6705ed9&amp;width=100%&amp;height=100%&amp;lang=ru_RU&amp;scroll=true"></script>
+      </div>
+    </div>
+  </section>
+
+  <section class="page__form-descktop form-descktop">
+    <div class="form-descktop__wap">
+      <h2 class="form-descktop__headlines headlines">Подать обращение онлайн</h2>
+      <p class="form-descktop__text text">
+        Вы можете подать обращение, оставить обратную связь
+        о работе сервиса, сообщить о неизвестных нам работах
+      </p>
+    </div>
+    <div class="form-descktop__form-wap form-wap">
+      <form class="form-wap__form form" action="#">
+        <div class="form__cont">
+          <div class="form__form-text form-text">Имя</div>
+          <input class="form-text form-text--desk" type="text" placeholder="Введите имя">
+        </div>
+        <div class="form__cont">
+          <div class="form__form-text form-text">Эл. Почта</div>
+          <input class="form-text form-text--desk" type="email" placeholder="Введите электронную почту">
+        </div>
+        <div class="form__cont">
+          <div class="form__form-text form-text">Текст обратной связи</div>
+          <textarea class="form-text form-text--desk form-text--big" id="inputText" name="text" rows="5"></textarea>
+          <label class="form-text form-text--holder" for="inputText">Введите текст</label>
+        </div>
+        <button class="form__btn btn">Подать обращение</button>
+      </form>
+      <div class="form-wap__img">
+        <img src="./src/img/img.png" alt="">
+      </div>
+    </div>
+  </section>
+
+  <section class="page__fit-wap">
+    <div class="fitbeck">
+      <h2 class="fitbeck__headlines headlines">Обратная <br> связь</h2>
+      <p class="fitbeck__text text">
+        Вы можете подать обращение, оставить обратную связь
+        о работе сервиса, сообщить о неизвестных нам работах
+      </p>
+      <button class="fitbeck__btn btn">Подать обращение</button>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer__text text">
+      <p class="footer__title">Сайт АМС Владикавказ</p>
+      <a href="tel:+78672550034" class="footer__tel">+7 (8672) 55-00-34</a>
+      <a href="mailto:ams@vladikavkaz.alania.gov.ru" class="footer__mail">ams@vladikavkaz.alania.gov.ru</a>
+    </div>
+    <div class="footer__wraper">
+      <p class="footer__clue text">Соцсети:</p>
+      <div class="footer__social-net">
+        <a href="#" class="footer__link"><img class="footer__img" src="./src/img/vk.svg" alt=""><img
+            class="footer__img-desk" src="./src/img/vk1.svg" alt=""></a>
+        <a href="#" class="footer__link"><img class="footer__img" src="./src/img/telegram.svg" alt=""><img
+            class="footer__img-desk" src="./src/img/tl1.svg" alt=""></a>
+      </div>
+    </div>
+    <img class="footer__gerb" src="./src/img/gerb.svg" alt="">
+  </footer>
 </body>
 
 </html>
