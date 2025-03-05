@@ -1,0 +1,63 @@
+@use "../mixins";
+@use "../variables";
+
+.filters-btn {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.filter-button {
+  background: none;
+  border: none;
+  padding: 0;
+  color: #000000;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  position: relative;
+  transition: color 0.3s ease;
+
+  @include mixins.mq(sm) {
+    font-size: 10px;
+    padding: 4px 8px;
+  }
+
+  @include mixins.mq(md) {
+    font-size: 12px;
+    padding: 6px 12px;
+  }
+
+  // Подчёркивание
+  &::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 4px;
+    width: 100%;
+    height: 2px;
+
+    background-color: #ADADAD;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+  }
+
+  // Активное состояние
+  &.active {
+    color: #000000;
+
+    &::after {
+      background-color: #7CC2F4;
+      transform: scaleX(1);
+    }
+  }
+
+  // Эффект при наведении
+  &:hover {
+    color: #000000;
+
+    &::after {
+      transform: scaleX(1);
+    }
+  }
+}

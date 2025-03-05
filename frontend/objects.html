@@ -49,13 +49,41 @@
     <div class="filters">
       <div class="filter-item">
         <span class="filter-indicator"></span>
+        <span class="filter-text">Все категории</span>
+      </div>
+      <div class="filter-item">
+        <span class="filter-indicator"></span>
+        <span class="filter-text">Парки</span>
+      </div>
+      <div class="filter-item">
+        <span class="filter-indicator"></span>
         <span class="filter-text">Дороги</span>
       </div>
       <div class="filter-item">
         <span class="filter-indicator"></span>
-        <span class="filter-text">В работе</span>
+        <span class="filter-text">Разное</span>
       </div>
     </div>
+    <div class="filters-btn">
+      <button class="filter-button active">Все</button>
+      <button class="filter-button">В работе</button>
+      <button class="filter-button">На рассмотрении</button>
+      <button class="filter-button">Выполненные</button>
+    </div>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        const buttons = document.querySelectorAll('.filter-button');
+
+        buttons.forEach(button => {
+          button.addEventListener('click', function () {
+            // Убираем активное состояние у всех кнопок
+            buttons.forEach(btn => btn.classList.remove('active'));
+            // Добавляем активное состояние текущей кнопке
+            button.classList.add('active');
+          });
+        });
+      });
+    </script>
     <div class="objects-wr__filters">
       <div class="filter">
         <h3 class="filter__h3">Фильтр</h3>
@@ -67,42 +95,42 @@
       </div>
     </div>
     <div class="objects-wr__objects objects">
-      <a href="/inner.html">
+      <a class="objects__link" href="/inner.html">
         <div class="object">
           <!-- <img class="object__img" src="./src/img/ts.avif" alt=""> -->
           <h4 class="object__h4">Гл.Текст</h4>
           <p class="object__description">Описание</p>
         </div>
       </a>
-      <a href="/inner.html">
+      <a class="objects__link" href="/inner.html">
         <div class="object">
           <!-- <img class="object__img" src="./src/img/ts.avif" alt=""> -->
           <h4 class="object__h4">Гл.Текст</h4>
           <p class="object__description">Описание</p>
         </div>
       </a>
-      <a href="/inner.html">
+      <a class="objects__link" href="/inner.html">
         <div class="object">
           <!-- <img class="object__img" src="./src/img/ts.avif" alt=""> -->
           <h4 class="object__h4">Гл.Текст</h4>
           <p class="object__description">Описание</p>
         </div>
       </a>
-      <a href="/inner.html">
+      <a class="objects__link" href="/inner.html">
         <div class="object">
           <!-- <img class="object__img" src="./src/img/ts.avif" alt=""> -->
           <h4 class="object__h4">Гл.Текст</h4>
           <p class="object__description">Описание</p>
         </div>
       </a>
-      <a href="/inner.html">
+      <a class="objects__link" href="/inner.html">
         <div class="object">
           <!-- <img class="object__img" src="./src/img/ts.avif" alt=""> -->
           <h4 class="object__h4">Гл.Текст</h4>
           <p class="object__description">Описание</p>
         </div>
       </a>
-      <a href="/inner.html">
+      <a class="objects__link" href="/inner.html">
         <div class="object">
           <!-- <img class="object__img" src="./src/img/ts.avif" alt=""> -->
           <h4 class="object__h4">Гл.Текст</h4>
@@ -147,8 +175,8 @@
         </div>
         <div class="form__cont">
           <div class="form__form-text form-text">Текст обратной связи</div>
-          <textarea class="form-text form-text--desk form-text--big" id="inputText" name="text" rows="5"></textarea>
-          <label class="form-text form-text--holder" for="inputText">Введите текст</label>
+          <textarea class="form-text form-text--desk form-text--big" id="inputText" name="text"
+            rows="5">Введите текст</textarea>
         </div>
         <button class="form__btn btn">Подать обращение</button>
       </form>
