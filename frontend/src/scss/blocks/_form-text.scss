@@ -126,7 +126,7 @@
     left: 13px;
     top: 20px;
     color: #404040;
-    // transition: opacity 0.3s ease; // Плавное исчезновение
+    // transition: opacity 0.3s ease;
     // pointer-events: none; // Чтобы label не мешал вводу
 
     @include mixins.mq(sm) {

@@ -43,10 +43,9 @@
   @include mixins.mq(md) {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px; // Отступ между элементами
+    gap: 10px; 
     margin-bottom: 12px;
   }
-
 
 }
 
@@ -104,9 +103,6 @@
 
 .moves {
   $block: &;
-
-
-
   display: none;
 
   @include mixins.mq(md) {
@@ -115,7 +111,7 @@
   }
 
   &__ul {
-    list-style: none; // Убираем стандартные маркеры
+    list-style: none;
     padding-left: 0;
     font-size: 8px;
     font-family: variables.$font-family-primary;
@@ -163,16 +159,3 @@
     }
   }
 }
-
-// &__ul li::before {
-//   content: "";
-//   position: absolute;
-//   left: 0;
-//   top: 50%;
-//   transform: translateY(-50%);
-//   width: 6px;
-//   height: 6px;
-//   background-color: #5A88FE;
-//   border-radius: 50%;
-//   // margin-right: 10px;
-// }
